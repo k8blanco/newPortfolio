@@ -1,4 +1,5 @@
 //Portfolio 2
+var demoLink = "";
 
 //Initialize SideNav, Floating Action Button
 $(document).ready(function(){
@@ -13,15 +14,15 @@ $(document).ready(function(){
       //On each new carousel item, 
       onCycleTo: function(data) {
         //assign demolink 
-        let demoLink = $("#" + data.id).attr("href");
-          if (this.pressed) {
-            console.log("tapped!");
-            // location.href === demoLink;
-          };
-        // $("#demoBtn").attr("href", demoLink);
-        console.log();
+        demoLink = $("#" + data.id).attr("href");
+        $("#demoBtn").attr("href", demoLink);
       }
     });
+
+    $(".submit").on("click", function() {
+      console.log("you clicked me! My href is: ", demoLink);
+    })
+ 
   });
   
 
