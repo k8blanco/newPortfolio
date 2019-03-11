@@ -1,0 +1,39 @@
+body {
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+/* Carousel */
+.carousel,
+.carousel-slider {
+    margin-top: 50px;
+    /* height: 850px; */
+    padding-top: 130%;
+}
+
+#one {
+    background-color: #008efe;
+}
+
+#two {
+    background-color: #ff0db3;
+}
+
+#three {
+    background-color: #fdca00;
+}
+
+#four {
+    background-color: #008efe;
+}
+
+#five {
+    background-color: #ff0db3;
+}
+
+/* Floating Action Buttons */
+.home:hover, 
+.home {
+  background-color:  #008efe;
+}
+

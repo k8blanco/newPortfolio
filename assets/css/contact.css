@@ -1,0 +1,46 @@
+
+.chat {
+    font-size: 45px;
+    margin-left: 28px;
+}
+
+
+
+
+/* Contact Buttons */
+.github:hover,
+.github {
+  background-color: #fdca00;
+}
+
+.email:hover,
+.email {
+  background-color: #008efe;
+  margin-left: 5px;
+}
+
+.linkedIn:hover,
+.linkedIn {
+  background-color: #ff0db3;
+  margin-left: 5px;
+}
+
+.resume:hover,
+.resume {
+  background-color: #fdca00;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Floating Action Buttons */
+.home:hover, 
+.home {
+  background-color:  #ff0db3;
+}
