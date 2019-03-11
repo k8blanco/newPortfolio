@@ -19,7 +19,7 @@ $(document).ready(function(){
       }
     });
 
-    $(".submit").on("click", function() {
+    $(".demoBtn").on("click", function() {
       console.log("you clicked me! My href is: ", demoLink);
     })
  
