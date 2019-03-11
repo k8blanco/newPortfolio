@@ -5,16 +5,27 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.fixed-action-btn').floatingActionButton();
     $(".dropdown-trigger").dropdown();
-    
-    $('.carousel').carousel({
+
+    var instance = M.Carousel.getInstance(".carousel");
+
+
+    $(".carousel").carousel({
+      //On each new carousel item, 
       onCycleTo: function(data) {
+        //assign demolink 
         let demoLink = $("#" + data.id).attr("href");
-        $("#demoBtn").attr("href", demoLink);
+          if (this.pressed) {
+            console.log("tapped!");
+            // location.href === demoLink;
+          };
+        // $("#demoBtn").attr("href", demoLink);
         console.log();
       }
     });
   });
   
+
+
 
   $(".carousel.carousel-slider").carousel({
     fullWidth: true,
