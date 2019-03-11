@@ -31,29 +31,24 @@ body {
     background-color: #ff0db3;
 }
 
-#CCBtn {
-    background-color: #ff0db3;
-}
-
-#BurgBtn {
+.demoBtn {
     background-color: #fdca00;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
-#FFBtn {
-    background-color: #008efe;
-}
-
-#LIBtn {
+.gitBtn {
     background-color: #ff0db3;
+    
 }
 
-#BamBtn {
-    background-color: #fdca00;
+.img {
+    margin-bottom: 10%;
 }
 
 /* Floating Action Buttons */
-.home:hover, 
+/* .home:hover, 
 .home {
   background-color:  #008efe;
-}
+} */
 
