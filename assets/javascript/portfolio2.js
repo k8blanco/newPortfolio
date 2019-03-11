@@ -7,31 +7,53 @@ $(document).ready(function(){
     $('.fixed-action-btn').floatingActionButton();
     $(".dropdown-trigger").dropdown();
 
-    var instance = M.Carousel.getInstance(".carousel");
+    // var instance = M.Carousel.getInstance(".carousel");
 
 
     $(".carousel").carousel({
-      //On each new carousel item, 
-      onCycleTo: function(data) {
-        //assign demolink 
-        demoLink = $("#" + data.id).attr("href");
-        $("#demoBtn").attr("href", demoLink);
-      }
+      //On each new carousel item,
+      // onCycleTo: function(ele) {
+      //   console.log(ele);
+      //   console.log($(ele).index());
+      //   //assign demolink 
+      //   // demoLink = $("#" + data.id).attr("href");
+      //   // $(".demoBtn").attr("href", demoLink);
+      //   // console.log(data.id);
+      //   // console.log()
+      //   // demoLink = $(this).data("href");
+      //   // $(".demoBtn").attr("href", demoLink);
+      // }
     });
 
+    $(".carousel.carousel-slider").carousel({
+      fullWidth: true,
+      indicators: true,
+      onCycleTo: function(ele) {
+        //console log entire element and index of element
+        console.log(ele);
+        console.log($(ele).index());
+        //assign demoLink
+        demoLink = $("#" + ele.id).attr("href");
+        console.log("element id: ", ele.id);
+        $(".demoBtn").attr("href", demoLink);
+        console.log("demo link: ", demoLink);
+
+      }
+    });
     $(".demoBtn").on("click", function() {
       console.log("you clicked me! My href is: ", demoLink);
     })
+
+    // $(".demoBtn").on("click", function() {
+    //   console.log("you clicked me! My href is: ", demoLink);
+    // })
  
   });
   
 
 
 
-  $(".carousel.carousel-slider").carousel({
-    fullWidth: true,
-    indicators: true
-  });
+
   
   // $("$demo").on("click", function(){
 

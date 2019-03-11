@@ -31,6 +31,26 @@ body {
     background-color: #ff0db3;
 }
 
+#CCBtn {
+    background-color: #ff0db3;
+}
+
+#BurgBtn {
+    background-color: #fdca00;
+}
+
+#FFBtn {
+    background-color: #008efe;
+}
+
+#LIBtn {
+    background-color: #ff0db3;
+}
+
+#BamBtn {
+    background-color: #fdca00;
+}
+
 /* Floating Action Buttons */
 .home:hover, 
 .home {
