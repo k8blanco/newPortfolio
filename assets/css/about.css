@@ -34,6 +34,7 @@
     overflow: scroll;
 }
 
+
 /* Floating Action Buttons */
 .home:hover, 
 .home {
@@ -42,8 +43,51 @@
 
 
 
-
-
-
-
 /* Media Queries */
+
+/* ------------------------ Media Queries ---------------------------------- */
+
+/* For Desktop */
+@media only screen and (min-width : 768px) {
+
+
+.about-container {
+    position: relative;
+    overflow: scroll;
+    padding-top: 50%;
+}
+
+.about-pic {
+    top: 10%;
+    /* left: 20%; */
+    /* position: absolute; */
+    z-index: 10;
+}
+
+#aboutCard {
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    border-top: 1px solid #fdca00;
+    border-bottom: 1px solid #fdca00;
+    border-left: 1px solid #ff0db3;
+    border-right: 1px solid #008efe;
+    border-radius: 5%;
+    line-height: 1.5;
+    
+    /* position: absolute; */
+    top: 22%;
+    left: 55%;
+    width: 22%;
+    /* height: 30%; */
+    /* margin-left: 15px; */
+    overflow: hidden;
+}
+
+
+
+}

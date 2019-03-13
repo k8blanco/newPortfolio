@@ -1,29 +1,23 @@
 //Portfolio 2
 var demoLink = "";
 
-//Initialize SideNav, Floating Action Button
+
 $(document).ready(function(){
-    $('.sidenav').sidenav();
-    $('.fixed-action-btn').floatingActionButton();
-    $(".dropdown-trigger").dropdown();
 
-    // var instance = M.Carousel.getInstance(".carousel");
-
-
-    $(".carousel").carousel({
-      //On each new carousel item,
-      // onCycleTo: function(ele) {
-      //   console.log(ele);
-      //   console.log($(ele).index());
-      //   //assign demolink 
-      //   // demoLink = $("#" + data.id).attr("href");
-      //   // $(".demoBtn").attr("href", demoLink);
-      //   // console.log(data.id);
-      //   // console.log()
-      //   // demoLink = $(this).data("href");
-      //   // $(".demoBtn").attr("href", demoLink);
-      // }
+    //Materialize Initializers and Options/Functions
+    $('.sidenav').sidenav({
+      isFixed: true
     });
+
+    $('.fixed-action-btn').floatingActionButton({
+      direction: "left"
+    });
+
+    $(".dropdown-trigger").dropdown({
+      closeOnClick: true
+    });
+
+    $(".carousel").carousel();
 
     $(".carousel.carousel-slider").carousel({
       fullWidth: true,
