@@ -19,6 +19,8 @@ $(document).ready(function(){
 
     $(".carousel").carousel();
 
+    $('.modal').modal();
+    
     //add listeners for screen size
     // carouselSize(x);
     // x.addListener(carouselSize);

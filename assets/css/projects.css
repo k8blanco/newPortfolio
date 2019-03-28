@@ -55,27 +55,113 @@ body {
         overflow: hidden;
     }
 
-    .carousel,
-    .carousel-slider {
-        margin-top: 1%;
-        padding-top: 41%;
-        width: 35%;
-        margin-left: 35%;
-        margin-bottom: 2%;
-        
-    }
 
-    .project-container {
+    .resp-container {
         position: relative;
         overflow: scroll;
-        /* padding-top: 14%; */
+        padding-top: 42%;
         width: 100%;
     }
 
+    .resp-text {
+        top: 2%;
+    }
 
+    .icons {
+        margin-left: 25%;
+    }
 
+    #ccIcon {
+        margin: 4%;
+        
+    }
 
+    #ffIcon {
+        margin: 4%;
+    }
 
+    #burgIcon {
+        margin: 4%;
+    }
+
+    #bookIcon {
+        margin: 4%;
+    }
+
+    #bamIcon {
+        margin: 4%;
+    }
+
+    #liriIcon {
+        margin: 4%;
+    }
+
+    .modal {
+        background-image: url("../images/blurry.jpg");
+        border-top: 1px solid #fdca00;
+        border-bottom: 1px solid #fdca00;
+        border-left: 1px solid #ff0db3;
+        border-right: 1px solid #008efe;
+        overflow: hidden;
+        height: 480px;
+        max-height: 100%;
+        
+
+    }
+
+    .projectCard {
+        margin-top: 0px;
+    }
+    
+    .card-content {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .card-image {
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 0px;
+        color: #fdca00;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 0px;
+        color: #fdca00;
+    }
+
+    #demoMe {
+        background-color: #008efe;
+        font-weight: bold;
+        color: white;
+        margin-top: 10px;
+    }
+
+    #demoMe:hover {
+        background-color: #fdca00;
+    }
+
+    #githubMe {
+        background-color: #ff0db3;
+        font-weight: bold;
+        color: white;
+        margin-top: 10px;
+    }
+
+    #githubMe:hover {
+        background-color: #fdca00;
+    }
 
 
 }
