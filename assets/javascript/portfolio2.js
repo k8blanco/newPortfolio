@@ -20,16 +20,16 @@ $(document).ready(function(){
     $(".carousel").carousel();
 
     //add listeners for screen size
-    carouselSize(x);
-    x.addListener(carouselSize);
+    // carouselSize(x);
+    // x.addListener(carouselSize);
 
     //media query function for carousel size
     // carouselSize();
 
     //carousel oncycle to function
     $(".carousel.carousel-slider").carousel({
-      // fullWidth: true,
-      // indicators: true,
+      fullWidth: true,
+      indicators: true,
       onCycleTo: function(ele) {
         //console log entire element and index of element
         console.log(ele);
@@ -45,34 +45,28 @@ $(document).ready(function(){
     $(".demoBtn").on("click", function() {
       console.log("you clicked me! My href is: ", demoLink);
     })
-
-    // $(".demoBtn").on("click", function() {
-    //   console.log("you clicked me! My href is: ", demoLink);
-    // })
  
   });
   
 
-function carouselSize(x) {
-  if (x.matches) {
-    $(".carousel.carousel-slider").carousel({
-      fullWidth: true,
-      indicators: true,
-      numVisible: 1
+// function carouselSize(x) {
+//   if (x.matches) {
+//     $(".carousel.carousel-slider").carousel({
+//       fullWidth: true,
+//       indicators: true,
+//       numVisible: 1
       
-    });
-  } else {
-    $(".carousel.carousel-slider").carousel({
-      fullWidth: false,  
-      indicators: false,
-      numVisible: 3
-    });
-  }
-}
+//     });
+//   } else {
+//     $(".carousel.carousel-slider").carousel({
+//       fullWidth: false,  
+//       indicators: false,
+//       numVisible: 3
+//     });
+//   }
+// }
 
-var x = window.matchMedia("(max-width: 750px)");
-// carouselSize(x)
-// x.addListener(carouselSize)
+// var x = window.matchMedia("(max-width: 750px)");
 
 
   
