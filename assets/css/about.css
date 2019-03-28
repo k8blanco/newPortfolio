@@ -1,3 +1,4 @@
+/* MOBILE FIRST */
 
 .about-container {
     position: relative;
@@ -36,58 +37,57 @@
 
 
 /* Floating Action Buttons */
-.home:hover, 
+.home:hover,
 .home {
-  background-color:  #fdca00;
+    background-color: #fdca00;
 }
 
-
-
-/* Media Queries */
 
 /* ------------------------ Media Queries ---------------------------------- */
 
-/* For Desktop */
+/* TABLET PORTRAIT / DESKTOP / LAPTOP */
 @media only screen and (min-width : 768px) {
+    /*add animations/transitions - scrolling up? */
+
+    .about-container {
+        position: relative;
+        overflow: scroll;
+        padding-top: 40%;
+    }
+
+    .about-pic {
+        top: 10%;
+        margin-left: 1%;
+        z-index: 10;
+    }
+
+    #aboutCard {
+        padding-bottom: 1%;
+        padding-top: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        background-color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        border-top: 1px solid #fdca00;
+        border-bottom: 1px solid #fdca00;
+        border-left: 1px solid #ff0db3;
+        border-right: 1px solid #008efe;
+        border-radius: 2%;
+        line-height: 1.5;
+        top: 25.5%;
+        left: 49%;
+        width: 35%;
+        overflow: hidden;
+    }
+
+    #aboutText {
+        padding-bottom: 1%;
+    }
 
 
-.about-container {
-    position: relative;
-    overflow: scroll;
-    padding-top: 50%;
+
 }
 
-.about-pic {
-    top: 10%;
-    /* left: 20%; */
-    /* position: absolute; */
-    z-index: 10;
-}
-
-#aboutCard {
-    padding-bottom: 0px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 15px;
-    background-color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    border-top: 1px solid #fdca00;
-    border-bottom: 1px solid #fdca00;
-    border-left: 1px solid #ff0db3;
-    border-right: 1px solid #008efe;
-    border-radius: 5%;
-    line-height: 1.5;
-    
-    /* position: absolute; */
-    top: 22%;
-    left: 55%;
-    width: 22%;
-    /* height: 30%; */
-    /* margin-left: 15px; */
-    overflow: hidden;
-}
-
-
-
-}
+/* TABLET LANDSCAPE / DESKTOP WIDESCREEN */
+@media only screen and (min-width : 1500px) {}

@@ -1,7 +1,9 @@
+/* MOBILE FIRST */
 
 .chat {
     font-size: 45px;
     margin-left: 28px;
+    text-transform: lowercase;
 }
 
 
@@ -30,11 +32,34 @@
 }
 
 
-
-
-
 /* Floating Action Buttons */
 .home:hover, 
 .home {
   background-color:  #ff0db3;
+}
+
+
+/* ------------------------ Media Queries ---------------------------------- */
+
+/* TABLET PORTRAIT / DESKTOP / LAPTOP */
+@media only screen and (min-width : 768px) {
+
+.chat {
+  margin-left: 25%;
+  margin-top: 8%;
+}
+
+.contact-buttons {
+  margin-left: 25%;
+  margin-top: -2%;
+}
+
+
+
+
+}
+
+/* TABLET LANDSCAPE / DESKTOP WIDESCREEN */
+@media only screen and (min-width : 1500px) {
+
 }

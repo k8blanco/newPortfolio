@@ -1,25 +1,27 @@
+/* MOBILE FIRST */
+
+[class*="col-"] {
+  width: 100%;
+}
+
 body {
   background-image: url("../images/blurry.jpg");
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  padding-right: 40px;
+  padding-right: 40px; /*need to change this to % - 3%? */
   overflow: hidden;
-
-  /* padding-bottom: 40px; */
-    
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
-  }
+  flex: 1 0 auto;
+}
 
 nav {
   margin-bottom: 0px;
   margin-top: 0px;
-
 }
 
 .resp-container {
@@ -111,50 +113,81 @@ h2 {
 }
 
 /* Floating Action Buttons */
+@keyframes bounce {
 
-.contact:hover,
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 .contact {
   background-color: #008efe;
 }
 
-.resume:hover,
+.contact:hover {
+  background-color: #fdca00;
+}
+
+
 .resume {
   background-color: #ff0db3;
 }
 
-.linkedIn:hover,
+.resume:hover {
+  animation: bounce 1s;
+  background-color: #008efe;
+}
+
+
 .linkedIn {
   background-color: #fdca00;
 }
 
-.github:hover,
+.linkedIn:hover {
+  animation: bounce 1s;
+  background-color: #ff0db3;
+}
+
+
 .github {
   background-color: #008efe;
 }
 
-.email:hover,
+.github:hover {
+  animation: bounce 1s;
+  background-color: #fdca00;
+}
+
+
 .email {
   background-color: #fdca00;
 }
 
-@media only screen and (max-width : 992px) {
-
-  header,
-  main,
-  footer,
-  .wrapper {
-    padding-left: 0;
-  }
+.email:hover {
+  animation: bounce 1s;
+  background-color: #ff0db3;
 }
 
-/* Mobile First */
-[class*="col-"] {
-  width: 100%;
-}
+
+
 
 /* ------------------------ Media Queries ---------------------------------- */
 
-/* For Desktop */
+/* TABLET PORTRAIT / DESKTOP / LAPTOP */
 @media only screen and (min-width : 768px) {
   h1 {
     font-family: 'Yeseva One', cursive;
@@ -171,34 +204,29 @@ h2 {
   .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 48%;
+    padding-top: 42%;
   }
 
   .resp-text {
     position: absolute;
-    top: 20%;
-    left: 0;
+    top: 18%;
+    left: 1%;
     width: 100%;
     height: 50%;
   }
 
   #navLinks {
     position: absolute;
-    top: 32%;
+    top: 28.5%;
   }
 
   .sidenav {
-    /* height: 60%; */
     background-color: transparent;
   }
 
   .dropdown-trigger {
     visibility: hidden;
   }
-
-  /* .sidenav {
-    height: 85%;
-  } */
 
   .name {
     margin-bottom: 10px;
@@ -208,17 +236,6 @@ h2 {
     margin-top: 10px;
   }
 
-  /* #slide-out {
-    margin-bottom: 100px !important;
-  } */
-
-  /* header,
-  main,
-  footer,
-  .wrapper {
-    padding-left: 5%;
-  } */
-
   nav {
     margin-bottom: 0px;
   }
@@ -226,12 +243,12 @@ h2 {
   #aboutLink {
     color: #fdca00;
     margin: 0px;
-    /* margin-top: 250%; */
     text-align: right;
     font-size: 20px;
     border-right: 1px solid #fdca00;
-    padding-right: 5px;
+    padding-right: 8%;
   }
+
 
   #projectsLink {
     color: #008efe;
@@ -239,7 +256,7 @@ h2 {
     text-align: right;
     font-size: 20px;
     border-right: 1px solid #fdca00;
-    padding-right: 5px;
+    padding-right: 8%;
   }
 
   #contactLink {
@@ -248,7 +265,7 @@ h2 {
     text-align: right;
     font-size: 20px;
     border-right: 1px solid #fdca00;
-    padding-right: 5px;
+    padding-right: 8%;
   }
 
   #homeLink {
@@ -257,7 +274,19 @@ h2 {
     text-align: right;
     font-size: 20px;
     border-right: 1px solid #fdca00;
-    padding-right: 5px;
+    padding-right: 8%;
   }
-
 }
+
+@media only screen and (max-width : 992px) {
+
+  header,
+  main,
+  footer,
+  .wrapper {
+    padding-left: 0;
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP WIDESCREEN */
+@media only screen and (min-width : 1500px) {}
